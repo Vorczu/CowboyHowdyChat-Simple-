@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#log>div {
+    animation: fadeIn .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeIn .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#log>div {
+    display: table-row;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .message {
+    word-wrap: break-word;
+    width: 65%;
+}
+
+
+.name {
+    margin-left: 0.2em;
+}
+
+
+
+body {
+  background-color: #111;
+  font-family: 'Arbutus', cursive;
+  color: rgb(94, 50, 19); 
+  margin: 133px;
+}
+
+.hat{
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    transform: rotate(-40deg);
+    width: 40px;
+}
+
+
+.msg_box{
+  background: #efbb74;
+  border: 2px solid #b68f58;
+  padding: 10px 10px;
+  border-radius: 4px;
+  word-break: break-word;
+}
+
+.box{
+  	width: fit-content;
+  	height: 90px;
+ 		max-width: 100%:
+    min-width: 100px;
+    position: relative;
+}
+
+.name_box{
+    position: absolute;
+    background: #b68f58;
+    border: 2px solid #523a18;;
+    padding: 4px;
+    top: -25px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
